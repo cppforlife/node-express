@@ -1,0 +1,15 @@
+id: c89509a6-a40f-44fc-aaaa-e6977cf1b3b5
+timestamp: 2023-09-22T18:10:35Z
+username: guest
+source: TAP-GUI
+accelerator:
+  name: node-express
+  source:
+    image: us-docker.pkg.dev/tap-sandbox-dev/tap-bits/tap-packages@sha256:1b807cbdef1d71a6a4b61814430d90eb78925285f8fa33b4cc6b8ab2d0de63a0
+fragments:
+  - name: tap-workload
+    source:
+      image: us-docker.pkg.dev/tap-sandbox-dev/tap-bits/tap-packages@sha256:d9c7d8d322f0740666ba7c752a9174d1eb66274338c4f0e211edb1d448104c2a
+options:
+  includeTap: true
+  projectName: node-express
