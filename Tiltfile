@@ -1,7 +1,7 @@
 LOCAL_PATH = os.getenv("LOCAL_PATH", default='.')
 NAMESPACE = os.getenv("NAMESPACE", default='apps')
 
-allow_k8s_contexts('tap-sandbox')
+allow_k8s_contexts('developer-sandbox')
 
 k8s_custom_deploy(
     'node-express',
